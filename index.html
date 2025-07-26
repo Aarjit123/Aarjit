@@ -1,13 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aarjit Baral - Personal Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.5;
+      min-height: 100vh;
+    }
 
-    
+    header {
+      background-color: #6c63ff;
+      padding: 60px 20px;
+      text-align: center;
+      user-select: none;
+      box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: normal;
+      color: white;
+    }
+
+    nav {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 1rem;
+      padding: 5px 10px;
+      border-radius: 0;
+      background: none;
+      transition: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      background: none;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      background-color: #1f1f3a;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.1);
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #d0c8ff;
+      border-bottom: 1px solid #6c63ff;
+      padding-bottom: 4px;
+      user-select: none;
+    }
+
+    section p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    ul.skills-list {
+      list-style-type: none;
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    ul.skills-list li {
+      background: #6c63ff;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 1rem;
+      color: white;
+      user-select: none;
+      box-shadow: 0 0 6px rgba(108, 99, 255, 0.7);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0 10px;
+      background-color: #1f1f3a;
+      color: #777aad;
+      font-size: 0.9rem;
+      user-select: none;
+      box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.1);
+    }
+
+    .social-links {
+      margin: 10px 0 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .social-links a {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      fill: #777aad;
+      transition: fill 0.3s ease;
+    }
+    .social-links a:hover {
+      fill: #6c63ff;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      ul.skills-list {
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    <p>This is the fasfaWebsite</p>
-</body>
-</html>
+
+  <header>
+    <h1>Aarjit Baral</h1>
+    <nav>
+      <a href="#about"><u>About</u></a>
+      <a href="#skills"><u>Skills</u></a>
+      <a href="#contact"><u>Contact</u></a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Aarjit from Gaindakot-10, Nepal;  a passionate programmer from Nepal who loves turning ideas into real software.
+        I specialize in Python and GUI design. Outside coding, I enjoy video editing and gaming to fuel creativity.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Python</li>
+        <li>C</li>
+        <li>HTML &amp; CSS</li>
+        <li>Scratch</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      
+<p>Email: <a href="mailto:aarjitbaral2067@gmail.com" style="color:#b0aef7;">aarjitbaral2067@example.com</a></p>
+<p>Email: <a href="mailto:aarjitbaral67@gmail.com" style="color:#b0aef7;">aarjitbaral67@example.com</a></p>
+      <p>Phone: +977-9845206074</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <!-- GitHub -->
+      <a href="https://github.com/Aarjit123" target="_blank" aria-label="GitHub" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.258.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.776.418-1.304.762-1.604-2.665-.3-5.467-1.332-5.467-5.931 0-1.31.468-2.38 1.235-3.22-.124-.303-.535-1.523.117-3.176 0 0 1.007-.322 3.301 1.23a11.5 11.5 0 0 1 3.003-.404 11.5 11.5 0 0 1 3.003.404c2.292-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.628-5.48 5.922.43.37.814 1.1.814 2.222v3.293c0 .32.19.694.8.576C20.565 21.796 24 17.296 24 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+      </a>
+
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/aarjit.baral.7/" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.675 0h-21.35C.597 0 0 .6 0 1.337v21.326C0 23.4.597 24 1.325 24h11.494v-9.294H9.691v-3.622h3.128V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.1 2.798.144v3.243h-1.918c-1.504 0-1.796.716-1.796 1.764v2.313h3.588l-.467 3.622h-3.12V24h6.116c.73 0 1.324-.6 1.324-1.337V1.337C24 .6 23.403 0 22.675 0z"/>
+        </svg>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/aarjit_baral/" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.75 2C4.54 2 2 4.54 2 7.75v8.5C2 19.46 4.54 22 7.75 22h8.5c3.21 0 5.75-2.54 5.75-5.75v-8.5C22 4.54 19.46 2 16.25 2h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.75a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 9.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/>
+        </svg>
+      </a>
+
+      <!-- YouTube -->
+      <a href="https://youtube.com/@codenest_nepal?si=WAbNI2k4dERhQY4_" target="_blank" aria-label="YouTube" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.498 6.186a2.982 2.982 0 0 0-2.096-2.103C19.728 3.5 12 3.5 12 3.5s-7.728 0-9.402.583a2.983 2.983 0 0 0-2.095 2.103A31.243 31.243 0 0 0 0 12a31.243 31.243 0 0 0 .503 5.814 2.983 2.983 0 0 0 2.095 2.103C4.272 20.5 12 20.5 12 20.5s7.728 0 9.402-.583a2.983 2.983 0 0 0 2.096-2.103A31.243 31.243 0 0 0 24 12a31.243 31.243 0 0 0-.502-5.814zM9.75
